@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoIas-pM2S2BmzYEKhCKqbRy1QCG-OG8g"></script>
     <script type="text/javascript">
       // When the window has finished loading create our google map below
@@ -55,19 +55,19 @@
       <input id="carousel-5" type="radio" name="carousel[]">
       <ul class="carousel__items">
         <li class="carousel__item">
-          <div style="background-image: url(../img/main-background.png);"></div>
+          <div style="background-image: url(img/main-background.png);"></div>
         </li>
         <li class="carousel__item">
-          <div style="background-image: url(../img/main-background2.png);"></div>
+          <div style="background-image: url(img/main-background2.png);"></div>
         </li>
         <li class="carousel__item">
-          <div style="background-image: url(../img/main-background3.png);"></div>
+          <div style="background-image: url(img/main-background3.png);"></div>
         </li>
         <li class="carousel__item">
-          <div style="background-image: url(../img/main-background5.png);"></div>
+          <div style="background-image: url(img/main-background5.png);"></div>
         </li>
         <li class="carousel__item">
-          <div style="background-image: url(../img/main-background4.png);"></div>
+          <div style="background-image: url(img/main-background4.png);"></div>
         </li>
       </ul>
       <div class="carousel__prev">
@@ -94,23 +94,43 @@
       <div class="carousel__title"></div>
       <div class="carousel__response"></div><a class="button carousel__reserve" href="reserv.html">réservation!</a><a class="carousel__facebook" href="https://www.facebook.com/LeCafeSaintPaul/?fref=ts" target="_blank">Facebook</a><a class="carousel__youtube" href="https://www.youtube.com/channel/UCTxI77giW0HeFtaE6cc-I-g" target="_blank">Youtube</a><a class="carousel__restomontreal" href="http://www.restomontreal.ca/5312/Cafe-Saint-Paul" target="_blank">restomontreal</a>
     </div>
-    <div class="section welcome">
+    <div class="test" style="height: 70px; background-color: white;"></div>
+    <div class="test" style="background-color: #f1f1f1;">
       <div class="container">
         <div class="row">
           <div class="one-half column">
-            <h4 class="welcome-title">Bienvenue</h4>
-            <h4 class="welcome-description">SUR LE SITE DU CAFÉ SAINT-PAUL</h4><img src="../img/seperator.png" alt="">
-            <h5 class="welcome-text">“Chaleureusement installé dans une vieille maison de La Prairie, le CAFÉ ST-PAUL est un des beaux secrets de la rive-sud de Montréal. Dans un menu varié, la cuisine est excellente et le joli personnel est diligent. Que ce soit au bar, dans la conviviale salle à dîner, au balcon semi privé ou sur la grande et magnifique terrasse, le CAFÉ ST-PAUL propose de copieux dîners servis en moins d’une heure et des soupers exquis dans une ambiance exceptionnelle et cordiale. Les musiciens des soirées « blues », les vendredis et samedis, sont des moments de détente inoubliables. La qualité, l’ambiance…et vous. Santé les Amis!” – Michel Beaudry, Le Journal de Montréal</h5>
-            <form action="about.html">
-              <button>EN SAVOIR PLUS</button>
-            </form>
+            <h1 class="welcome-title" style="padding-top: 70px; color: #666666;">Nous Joindre</h1><br><img src="img/seperator.png" alt="">
+            <h1 class="welcome-text" style="font-size: 22px; color: #b5b5b5;">Envoyer nous un message et on vous reviendra le plus vite possible.</h1><br>
+            <h1 class="employe-name" style="font-size: 45px; font-weight: bold;">Trouvez-Nous</h1>
+            <h1 class="welcome-text" style="font-size: 22px; padding-bottom: 70px; color: #b5b5b5;">345, Boul. Taschereau (Saint-Paul)<br>La Prairie, QC, J5R 1T4<br><br>
+              Contacter nous au
+              1 (450) 907-4667
+            </h1>
           </div>
           <div class="one-half column">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sca!4v1481414623630!6m8!1m7!1sh45FOGsh1sIAAAQfCPgvLg!2m2!1d45.41474368829358!2d-73.4900803203301!3f222.73648525000283!4f-13.654484709406091!5f0.7820865974627469" width="100%" height="540em"></iframe>
+            <form>
+              <label class="label-design" for="nameInput" style="padding-top: 70px;">Nom</label>
+              <input class="u-full-width label-inside" id="nameInput" type="text" placeholder="Dany Gagnon">
+              <label class="label-design" for="emailInput" style="padding-top: 20px;">E-mail</label>
+              <input class="u-full-width label-inside" id="emailInput" type="email" placeholder="ddanygagnon@gmail.com">
+              <label class="label-design" for="msgInput" style="padding-top: 20px;">Message</label>
+              <textarea class="u-full-width label-inside" id="msgInput" placeholder="Merci de prendre le temps de nous contacter." style="height:150px;"></textarea>
+              <div class="row">
+                <div class="one-half column">
+                  <input class="button u-full-width" style="height: 50px;" type="submit" value="Envoyer!">
+                </div>
+                <div class="one-half column">
+                  <label class="example-send-yourself-copy">
+                    <input type="checkbox"><span class="label-body" style="color: #b5b5b5;">Envoyez-vous une copie</span>
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    <div class="test" style="height: 70px; background-color: white;"></div>
     <div id="map" style="height: 500px;"></div>
     <div class="section footer">
       <div class="footer-top">
