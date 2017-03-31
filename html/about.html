@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/index.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoIas-pM2S2BmzYEKhCKqbRy1QCG-OG8g"></script>
+    <script type="text/javascript">
+      // When the window has finished loading create our google map below
+      google.maps.event.addDomListener(window, 'load', init);
+      function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+      // How zoomed in you want the map to start at (always required)
+      zoom: 17,
+      // The latitude and longitude to center the map (always required)
+      center: new google.maps.LatLng(45.4147437, -73.4900803),
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [{"stylers":[{"hue":"#dd0d0d"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]}]
+      };
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(45.4147437, -73.4900803),
+      map: map,
+      title: 'Snazzy!'
+      });
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <button class="btn-nav"><span>></span></button>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="#">Événements</a></li>
+        <li><a href="reserv.html">Réservations</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+    <div class="carousel">
+      <input id="carousel-1" type="radio" name="carousel[]" checked="">
+      <input id="carousel-2" type="radio" name="carousel[]">
+      <input id="carousel-3" type="radio" name="carousel[]">
+      <input id="carousel-4" type="radio" name="carousel[]">
+      <input id="carousel-5" type="radio" name="carousel[]">
+      <ul class="carousel__items">
+        <li class="carousel__item">
+          <div style="background-image: url(../img/main-background.png);"></div>
+        </li>
+        <li class="carousel__item">
+          <div style="background-image: url(../img/main-background2.png);"></div>
+        </li>
+        <li class="carousel__item">
+          <div style="background-image: url(../img/main-background3.png);"></div>
+        </li>
+        <li class="carousel__item">
+          <div style="background-image: url(../img/main-background5.png);"></div>
+        </li>
+        <li class="carousel__item">
+          <div style="background-image: url(../img/main-background4.png);"></div>
+        </li>
+      </ul>
+      <div class="carousel__prev">
+        <label for="carousel-1"></label>
+        <label for="carousel-2"></label>
+        <label for="carousel-3"></label>
+        <label for="carousel-4"></label>
+        <label for="carousel-5"></label>
+      </div>
+      <div class="carousel__next">
+        <label for="carousel-1"></label>
+        <label for="carousel-2"></label>
+        <label for="carousel-3"></label>
+        <label for="carousel-4"></label>
+        <label for="carousel-5"></label>
+      </div>
+      <div class="carousel__nav">
+        <label for="carousel-1"></label>
+        <label for="carousel-2"></label>
+        <label for="carousel-3"></label>
+        <label for="carousel-4"></label>
+        <label for="carousel-5"></label>
+      </div>
+      <div class="carousel__title"></div>
+      <div class="carousel__response"></div><a class="button carousel__reserve" href="reserv.html">réservation!</a><a class="carousel__facebook" href="https://www.facebook.com/LeCafeSaintPaul/?fref=ts" target="_blank">Facebook</a><a class="carousel__youtube" href="https://www.youtube.com/channel/UCTxI77giW0HeFtaE6cc-I-g" target="_blank">Youtube</a><a class="carousel__restomontreal" href="http://www.restomontreal.ca/5312/Cafe-Saint-Paul" target="_blank">restomontreal</a>
+    </div>
+    <div class="test" style="background-image: url(../img/quotes.png); background-color: #f1f1f1; background-repeat: no-repeat; background-size: cover;">
+      <div class="container">
+        <h1 class="quote">Très bon endroit pour relaxer et passer un bon moment entre amis. Sans oublier la patronne qui est très gentille.</h1><br><br>
+        <h1 class="quote-name" style="text-align: center; font-weight: bold; font-size: 33px; color: #868686;">Daniel Lajoie</h1>
+      </div>
+    </div>
+    <div class="employe-bg">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column"><img class="u-max-full-width" style="padding-top: 140px;" src="../img/donna.png" alt="Donna"></div>
+          <div class="one-half column" style="margin: 0;">
+            <h1 style="padding-top: 130px; padding-left: 0; font-size: 35px; color: #868686; margin-bottom: 40px;">Gérante</h1>
+            <h1 class="employe-name" style="padding-left: 0; font-size: 47px; font-weight: bold;">Donna De Gagné</h1>
+            <h1 class="employe-description" style="padding-left: 0; font-size: 25px; color: #cbcbcb;">Une gérante exceptionnelle avec un sourire et blahblahblah.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bitch2" style="height: 70px; background-color: white;"></div>
+    <div id="map" style="height: 500px;"></div>
+    <div class="section footer">
+      <div class="footer-top">
+        <div class="container"></div>
+      </div>
+      <div class="footer-mid">
+        <h1 class="footer-copyright">Café Saint-Paul ©<a class="footer-link" href="#">Dany Gagnon </a>| All Rights Reserved</h1>
+      </div>
+    </div>
+  </body>
+</html>
